@@ -16,12 +16,8 @@
           <div class="menu__default" v-if="showDefault">
             default
           </div>
-          <div class="menu__header" v-if="showMenuHeader">
-            header
-          </div>
-          <div class="menu__body" v-if="showMenuBody">
-            body
-          </div>
+          <editMenuHeader v-if="showMenuHeader" />
+          <editMenuBody v-if="showMenuBody" />
         </div>
       </div>
     </b-row>
@@ -29,12 +25,19 @@
 </template>
 
 <script>
+import EditMenuHeader from '../components/EditMenuHeader';
+import EditMenuBody from '../components/EditMenuBody';
+
 export default {
   name: 'Edit',
   data () {
     return {
       currentSection: 'default'
     }
+  },
+  components: {
+    EditMenuHeader,
+    EditMenuBody
   },
   methods: {
     clickHeader () {
