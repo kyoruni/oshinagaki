@@ -5,7 +5,7 @@
       <div class="infomation col-8 mx-auto">
         <div class="text-center m-4">
           <p class="infomation--title">
-            即売会向けお品書き画像作成サイト<br />
+            即売会向けお品書き画像作成ツール<br />
           </p>
           <span class="infomation--operation-check">
             動作確認済：Chrome
@@ -45,6 +45,10 @@ export default {
   &--title {
     font-weight: bold;
     margin-bottom: 6px;
+  }
+  // 動作確認
+  &--operation-check {
+    font-size: 0.8rem;
   }
 }
 
