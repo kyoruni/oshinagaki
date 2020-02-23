@@ -26,19 +26,23 @@
       <div class="description col-8 mt-4 mx-auto">
         <ul class="m-4">
           <li>即売会参加告知用のお品書き画像が、ブラウザ上で簡単に作成できます。</li>
+          <li>使用する環境によっては正しく動作しない場合があります。</li>
+          <li>作成した画像の再配布は禁止です。</li>
+          <li>印刷用の解像度ではないため、ポスター等の使用はできません。</li>
+          <li>使用報告、クレジット記載は不要です。</li>
           <li>頑張って作成中！</li>
         </ul>
       </div>
     </b-row>
-    <!-- 注意書き -->
-    <div class="notes fixed-bottom p-4">
-      <ul class="mx-auto col-8">
-        <li>使用する環境によっては正しく動作しない場合があります。</li>
-        <li>作成した画像の再配布は禁止です。</li>
-        <li>印刷用の解像度ではないため、ポスター等の使用はできません。</li>
-        <li>使用報告、クレジット記載は不要です。</li>
-      </ul>
-    </div>
+    <!-- フッター -->
+    <b-row>
+      <div class="footer fixed-bottom col-12 p-4">
+        <ul class="text-center">
+          <li>このサイトについて</li>
+          <li>連絡先</li>
+        </ul>
+      </div>
+    </b-row>
   </div>
 </template>
 
@@ -102,17 +106,19 @@ export default {
   }
 }
 
-// 注意書き
-.notes {
+// フッター
+.footer {
   background: #3d3d3d;
   color: #fff;
   ul {
     font-size: 0.8rem;
+    list-style: none;
   }
   li {
-    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
     &:last-child {
-      margin-bottom: 0;
+      margin-right: 0;
     }
   }
 }
