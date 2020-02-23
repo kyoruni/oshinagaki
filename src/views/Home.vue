@@ -15,6 +15,12 @@
     </b-row>
     <!-- お知らせ -->
     <news />
+    <!-- 作る！ -->
+    <div class="making mt-4">
+      <b-button size="lg" class="making--button">
+        作る！
+      </b-button>
+    </div>
   </div>
 </template>
 
@@ -39,6 +45,25 @@ export default {
   &--title {
     font-weight: bold;
     margin-bottom: 6px;
+  }
+}
+
+// 作る！
+.making {
+  text-align: center;
+  // ボタン
+  &--button {
+    background: #82d02f;
+    border: 1px solid #82d02f;
+    opacity: 0.7;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    // ボタンにマウス乗せたとき
+    &:hover {
+      background: #82d02f;
+      border: 1px solid #82d02f;
+      opacity: 1.5;
+    }
   }
 }
 </style>
