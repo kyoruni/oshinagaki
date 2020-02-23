@@ -21,6 +21,15 @@
         作る！
       </button>
     </div>
+    <!-- 説明書き -->
+    <b-row>
+      <div class="description col-8 mt-4 mx-auto">
+        <ul class="m-4">
+          <li>即売会参加告知用のお品書き画像が、ブラウザ上で簡単に作成できます。</li>
+          <li>頑張って作成中！</li>
+        </ul>
+      </div>
+    </b-row>
     <!-- 注意書き -->
     <div class="notes fixed-bottom p-4">
       <ul class="mx-auto col-8">
@@ -82,19 +91,29 @@ export default {
   }
 }
 
+// 説明書き
+.description {
+  font-size: 0.9rem;
+  li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 注意書き
 .notes {
   background: #3d3d3d;
   color: #fff;
-}
-
-ul {
-  font-size: 0.8rem;
-}
-
-li {
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
+  ul {
+    font-size: 0.8rem;
+  }
+  li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 </style>
