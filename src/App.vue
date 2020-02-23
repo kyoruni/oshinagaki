@@ -6,6 +6,10 @@
         お品書きメーカー
         </b-navbar-brand>
     </b-navbar>
-    <router-view/>
+    <b-container fluid>
+      <b-row>
+        <router-view/>
+      </b-row>
+    </b-container>
   </div>
 </template>
