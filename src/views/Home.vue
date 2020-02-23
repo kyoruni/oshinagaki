@@ -21,6 +21,15 @@
         作る！
       </button>
     </div>
+    <!-- 注意書き -->
+    <div class="notes fixed-bottom p-4">
+      <ul class="mx-auto col-8">
+        <li>使用する環境によっては正しく動作しない場合があります。</li>
+        <li>作成した画像の再配布は禁止です。</li>
+        <li>印刷用の解像度ではないため、ポスター等の使用はできません。</li>
+        <li>使用報告、クレジット記載は不要です。</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -70,6 +79,22 @@ export default {
     &:hover {
       opacity: 1.5;
     }
+  }
+}
+
+.notes {
+  background: #3d3d3d;
+  color: #fff;
+}
+
+ul {
+  font-size: 0.8rem;
+}
+
+li {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 </style>
