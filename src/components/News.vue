@@ -1,7 +1,7 @@
 <template>
   <div class="news">
     <b-row class="mt-4">
-      <div class="main col-8 mx-auto">
+      <div class="main col-md-4 col-12 mx-auto">
         <ul class="m-2">
           <li v-for="news in newsList" :key="news.id" class="news-list">
             <font-awesome-icon icon="rss" class="news-list--icon" />
@@ -24,9 +24,9 @@ export default {
   data () {
     return {
       newsList: [
-        { id: 1, date: '2020-01-23', title: 'お知らせ1' },
-        { id: 2, date: '2020-01-23', title: 'お知らせ2' },
-        { id: 3, date: '2020-01-24', title: 'お知らせ3' }
+        { id: 1, date: '2020-01-23', title: 'トップページ公開しました' },
+        { id: 2, date: '2020-01-23', title: '1品レイアウトで作成できるようになりました' },
+        { id: 3, date: '2020-01-24', title: '背景画像を変更できるようになりました' }
       ]
     }
   }
@@ -59,6 +59,10 @@ li {
   &--date {
     color: #7f7f7f;
     font-size: 0.8rem;
+  }
+  // お知らせリストのタイトル
+  &--title {
+    font-size: 0.9rem;
   }
 }
 </style>

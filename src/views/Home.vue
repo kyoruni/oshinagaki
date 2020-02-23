@@ -23,7 +23,7 @@
     </div>
     <!-- 説明書き -->
     <b-row>
-      <div class="description col-8 mt-4 mx-auto">
+      <div class="description col-md-6 col-12 mt-4 mx-auto">
         <ul class="m-4">
           <li>即売会参加告知用のお品書き画像が、ブラウザ上で簡単に作成できます。</li>
           <li>使用する環境によっては正しく動作しない場合があります。</li>
@@ -98,6 +98,7 @@ export default {
 // 説明書き
 .description {
   font-size: 0.9rem;
+  margin-bottom: 60px;
   li {
     margin-bottom: 10px;
     &:last-child {
@@ -110,6 +111,7 @@ export default {
 .footer {
   background: #3d3d3d;
   color: #fff;
+  height: 60px;
   ul {
     font-size: 0.8rem;
     list-style: none;
