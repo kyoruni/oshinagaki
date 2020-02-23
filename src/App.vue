@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <button class="btn btn-info">test</button>
+    <b-navbar toggleable="lg" type="dark" variant="info">
+      <b-navbar-brand href="#">お品書きメーカー</b-navbar-brand>
+    </b-navbar>
     <router-view/>
   </div>
 </template>
