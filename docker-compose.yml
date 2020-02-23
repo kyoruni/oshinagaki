@@ -6,5 +6,5 @@ services:
       - 3000:8080
     volumes:
       - .:/app
-    # command: npm run serve
-    command: tail -f /dev/null
+    command: npm run serve
+    # command: tail -f /dev/null
