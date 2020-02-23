@@ -1,8 +1,8 @@
 <template>
   <div class="home">
-    <b-row>
-      <!-- インフォメーション -->
-      <div class="infomation col-8 mt-4 mx-auto">
+    <!-- インフォメーション -->
+    <b-row class="mt-4">
+      <div class="infomation col-8 mx-auto">
         <p class="text-center m-4">
           <span class="font-weight-bold">
             即売会向けお品書き画像作成サイト<br />
@@ -10,15 +10,22 @@
           動作確認済：Chrome
         </p>
       </div>
-      <!-- お知らせ -->
+    </b-row>
+    <!-- お知らせ -->
+    <b-row class="mt-4">
+      <news />
     </b-row>
   </div>
 </template>
 
 <script>
+import news from '../components/News'
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    news
+  }
 }
 </script>
 
