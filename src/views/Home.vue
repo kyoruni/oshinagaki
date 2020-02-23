@@ -17,9 +17,9 @@
     <news />
     <!-- 作る！ -->
     <div class="making mt-4">
-      <button class="making--button p-3">
+      <router-link tag="button" to="/edit" class="making--button p-3">
         作る！
-      </button>
+      </router-link>
     </div>
     <!-- 説明書き -->
     <b-row>
