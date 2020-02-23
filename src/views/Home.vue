@@ -12,9 +12,7 @@
       </div>
     </b-row>
     <!-- お知らせ -->
-    <b-row class="mt-4">
-      <news />
-    </b-row>
+    <news />
   </div>
 </template>
 
@@ -32,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 .infomation {
   background: #f98d6c;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
 }
 </style>
