@@ -17,9 +17,9 @@
     <news />
     <!-- 作る！ -->
     <div class="making mt-4">
-      <b-button size="lg" class="making--button">
+      <button class="making--button p-3">
         作る！
-      </b-button>
+      </button>
     </div>
   </div>
 </template>
@@ -59,13 +59,15 @@ export default {
   &--button {
     background: #82d02f;
     border: 1px solid #82d02f;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
     opacity: 0.7;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    width: 150px;
+    -webkit-transition: 0.3s ease-in-out;
     // ボタンにマウス乗せたとき
     &:hover {
-      background: #82d02f;
-      border: 1px solid #82d02f;
       opacity: 1.5;
     }
   }
