@@ -9,13 +9,13 @@
                 {{ eventDate }}
               </div>
               <div class="preview__header__items--event-name">
-                event name
+                {{ eventName }}
               </div>
               <div class="preview__header__items--space-name">
-                space name
+                {{ spaceName }}
               </div>
               <div class="preview__header__items--circle-name">
-                circle name
+                {{ circleName }}
               </div>
             </div>
           </div>
@@ -31,7 +31,13 @@
           </div>
           <editMenuHeader v-if="showMenuHeader"
             @eventDate="setEventDate"
-            :eventDate="eventDate"/>
+            @eventName="setEventName"
+            @spaceName="setSpaceName"
+            @circleName="setCircleName"
+            :eventDate="eventDate"
+            :eventName="eventName"
+            :spaceName="spaceName"
+            :circleName="circleName"/>
           <editMenuBody v-if="showMenuBody" />
         </div>
       </div>
@@ -48,7 +54,10 @@ export default {
   data () {
     return {
       currentSection: 'default',
-      eventDate: 'eee'
+      eventDate: 'ddd',
+      eventName: 'nnn',
+      spaceName: 'sss',
+      circleName: 'ccc'
     }
   },
   components: {
@@ -64,6 +73,15 @@ export default {
     },
     setEventDate (value) {
       this.eventDate = value
+    },
+    setEventName (value) {
+      this.eventName = value
+    },
+    setSpaceName (value) {
+      this.spaceName = value
+    },
+    setCircleName (value) {
+      this.circleName = value
     }
   },
   computed: {

@@ -14,17 +14,35 @@
     <!-- イベント名 -->
     <div class="form-group">
       <label for="inputEventName">イベント名</label>
-      <input type="text" class="form-control" id="inputEventName" placeholder="イベント名">
+      <input
+        type="text"
+        class="form-control"
+        id="inputEventName"
+        placeholder="イベント名"
+        :value="eventName"
+        @input="setEventName">
     </div>
     <!-- スペース名 -->
     <div class="form-group">
       <label for="inputSpaceName">スペース名</label>
-      <input type="text" class="form-control" id="inputSpaceName" placeholder="スペース名">
+      <input
+        type="text"
+        class="form-control"
+        id="inputSpaceName"
+        placeholder="スペース名"
+        :value="spaceName"
+        @input="setSpaceName">
     </div>
     <!-- サークル名 -->
     <div class="form-group">
       <label for="inputCircleName">サークル名</label>
-      <input type="text" class="form-control" id="inputCircleName" placeholder="サークル名">
+      <input
+        type="text"
+        class="form-control"
+        id="inputCircleName"
+        placeholder="サークル名"
+        :value="circleName"
+        @input="setCircleName">
     </div>
   </div>
 </template>
@@ -35,10 +53,22 @@ export default {
   methods: {
     setEventDate (value) {
       this.$emit('eventDate', value.target.value)
+    },
+    setEventName (value) {
+      this.$emit('eventName', value.target.value)
+    },
+    setSpaceName (value) {
+      this.$emit('spaceName', value.target.value)
+    },
+    setCircleName (value) {
+      this.$emit('circleName', value.target.value)
     }
   },
   props: [
-    'eventDate'
+    'eventDate',
+    'eventName',
+    'spaceName',
+    'circleName'
   ]
 }
 </script>
