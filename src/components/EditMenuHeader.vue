@@ -3,7 +3,13 @@
     <!-- 日付 -->
     <div class="form-group">
       <label for="inputEventDate">イベント開催日</label>
-      <input type="text" class="form-control" id="inputEventDate" placeholder="イベント開催日">
+      <input
+        type="text"
+        class="form-control"
+        id="inputEventDate"
+        placeholder="イベント開催日"
+        :value="eventDate"
+        @input="setEventDate">
     </div>
     <!-- イベント名 -->
     <div class="form-group">
@@ -25,6 +31,14 @@
 
 <script>
 export default {
-  name: 'EditMenuHeader'
+  name: 'EditMenuHeader',
+  methods: {
+    setEventDate (value) {
+      this.$emit('eventDate', value.target.value)
+    }
+  },
+  props: [
+    'eventDate'
+  ]
 }
 </script>
