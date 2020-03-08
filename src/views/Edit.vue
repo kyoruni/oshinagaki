@@ -116,11 +116,11 @@ export default {
       font-size: 36px;
       &--event-date {
         background: pink;
-        width: 25%;
+        width: 20%;
       }
       &--event-name {
         background: orange;
-        width: 25%;
+        width: 30%;
       }
       &--space-name {
         background: yellow;
