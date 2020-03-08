@@ -112,6 +112,8 @@ export default {
       height: 50px;
       margin-top: 25px;
       margin-bottom:25px;
+      line-height: 50px;
+      font-size: 36px;
       &--event-date {
         background: pink;
         width: 25%;
